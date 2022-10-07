@@ -3,10 +3,3 @@ kind: ConfigMap
 metadata:
   name: game-demo
 data:
-
-
-git remote add origin git@github.com:Bobaddey/Kubernetes_YAML
-
-https://github.com/Bobaddey/Kubernetes_YAML
-
-git push --set-upstream origin main
