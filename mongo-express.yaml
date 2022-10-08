@@ -8,11 +8,11 @@ spec:
   replicas: 3
   selector:
     matchLabels:
-      app: nginx
+      app: mongo-express
   template:
     metadata:
       labels:
-        app: nginx
+        app: mongo-express
     spec:
       containers:
       - name: mongo-express
@@ -33,7 +33,7 @@ spec:
           - name: ME_CONFIG_MONGODB_SERVER 
             valueFrom: 
               configMapKeyRef: 
-                name: config-map
+                name: mongo
                 key: database_url
 
 ---
